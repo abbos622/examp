@@ -1,0 +1,158 @@
+    @media only screen and (max-width:768px) {
+        .container {
+            max-width: 690px;
+        }
+        .hero {
+            flex-direction: column;
+            div {
+                text-align: center;
+                width: 100%;
+            }
+            .hero__img {
+                margin-top: 83px;
+            }
+        }
+        .cards {
+            grid-template-columns: 100%;
+            gap: 16px;
+            box-shadow: none;
+            .card {
+                border-radius: 20px;
+                background: #FFF;
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+                padding: 32px;
+                display: flex;
+                align-items: center;
+                gap: 32px;
+            }
+        }
+        h3 {
+            max-width: 394px;
+            margin-top: 24px;
+        }
+        .card__text {
+            max-width: 394px;
+            margin-top: 20px;
+        }
+        .oneShot {
+            display: none;
+        }
+        .cardsThree {
+            grid-template-columns: auto;
+        }
+        .card__Three__text {
+            max-width: 394px;
+        }
+        .truckCards {
+            flex-direction: column;
+        }
+        .truck__card {
+            width: 100%;
+        }
+        .truck__text {
+            max-width: 100%;
+            width: 100%;
+        }
+        .var {
+            width: 100%;
+        }
+        .none {
+            display: none;
+        }
+        .logos {
+            grid-template-columns: auto auto;
+        }
+        .logo__tip {
+            background: red;
+        }
+    }
+    
+    @media only screen and (max-width:915px) and (min-width:769px) {
+        .cards {
+            grid-template-columns: auto auto;
+            gap: 40px 0;
+        }
+        .dnone__card {
+            flex-direction: column;
+            text-align: center;
+        }
+        .logos {
+            grid-template-columns: 200px 200px 200px;
+            justify-content: center;
+        }
+        .user__white {
+            flex-direction: column;
+        }
+    }
+    
+    @media only screen and (max-width:375px) {
+        body {
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 344px;
+            overflow: hidden;
+        }
+        .hero__title {
+            font-size: 28px;
+            text-align: start;
+        }
+        .hero__word {
+            text-align: start;
+        }
+        .hero__link {
+            width: 100%;
+            text-align: start;
+        }
+        .cards {
+            .card {
+                flex-direction: column;
+            }
+        }
+        .center__title {
+            font-size: 28px;
+        }
+        .center__text {
+            display: none;
+        }
+        .center__card__title {
+            font-size: 18px;
+        }
+        .center__card {
+            padding: 16px;
+        }
+        .center__input {
+            margin-top: 26px;
+        }
+        .overlay {
+            padding: 0;
+        }
+        .overlay__title {
+            font-size: 30px;
+        }
+        .var__titl {
+            display: none;
+        }
+        .men {
+            display: block;
+        }
+        // table {
+        //     tr {
+        //         th {
+        //             display: none;
+        //         }
+        //         td {
+        //             display: none;
+        //         }
+        //         &:first-child {
+        //             display: flex;
+        //         }
+        //     }
+        // }
+        .pdv__text {
+            display: none;
+        }
+        .userCards {
+            grid-template-columns: 1fr;
+        }
+    }

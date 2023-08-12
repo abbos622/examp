@@ -1,0 +1,23 @@
+%text {
+    color: var(--additional-font, #6B6B6C);
+    font-family: PT Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+%d-flex {
+    display: flex;
+    align-items: center;
+}
+
+$bgcolor:#FFCE50;
+@mixin satr($size, $lin-h) {
+    color: var(--main-font, #363738);
+    font-family: Exo 2;
+    font-size: $size;
+    font-style: normal;
+    font-weight: 600;
+    line-height: $lin-h;
+}

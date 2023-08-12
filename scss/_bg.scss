@@ -1,0 +1,32 @@
+.bgTruck {
+    max-height: 453px;
+    margin-top: 100px;
+    // background: url("../images/bgTruck.jpg");
+    display: flex;
+    .overlay__img {
+        position: absolute;
+        z-index: 1;
+        float: left;
+        left: 280px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.overlay {
+    max-width: 769px;
+    padding: 178px 317px 166px 90px;
+    background: var(--green, #0B7572);
+    fill: var(--green, #0B7572);
+    z-index: 2;
+    -webkit-clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+    &:hover.overlay {
+        opacity: 0.9;
+    }
+}
+
+.overlay__title {
+    @include satr(48px, 125%);
+}

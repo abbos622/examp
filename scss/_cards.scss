@@ -1,0 +1,348 @@
+// first cardas style
+.cards {
+    margin-top: 67px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+    padding: 40px 16px 40px 16px;
+    @extend %d-flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    .card {
+        padding: 0 105px 0 64px;
+        border-right: 1px solid #D7D7DD;
+    }
+}
+
+.card__title {
+    max-width: 228px;
+    margin-top: 24px;
+}
+
+.card__text {
+    max-width: 228px;
+    margin-top: 16px;
+    @extend %text;
+}
+
+.center__title {
+    margin-top: 100px;
+    @include satr(48px, 125%)
+}
+
+.center__text {
+    @extend %text;
+    max-width: 667px;
+    margin-top: 32px;
+}
+
+//second cards style
+.div {
+    @extend %d-flex;
+    gap: 0 140px;
+    align-items: flex-start;
+}
+
+.center__cards {
+    @extend %d-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    gap: 16px;
+}
+
+.center__card {
+    padding: 40px 125px 48px 40px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: flex-start;
+    gap: 0 32px;
+    &:hover {
+        transform: scale(1.079);
+    }
+}
+
+.center__input {
+    margin-top: 10px;
+    padding: 25px;
+    width: 20px;
+    height: 20px;
+}
+
+.center__card__title {
+    @include satr(20px, 150%);
+}
+
+.center__card__text {
+    @extend %text;
+    max-width: 466px;
+    margin-top: 24px;
+}
+
+.oneShot {
+    margin-top: 50px;
+}
+
+.oneShot__title1 {
+    @include satr(20px, 150%);
+}
+
+.oneShot__title2 {
+    @include satr(54px, 150%);
+    letter-spacing: 16.2;
+    sub {
+        @extend %text;
+        font-size: 18px;
+    }
+}
+
+.hr {
+    height: 2px;
+    background: $bgcolor;
+}
+
+.cardsThree {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 64px 176px;
+}
+
+.card__Three {
+    @extend %d-flex;
+    gap: 0 40px;
+}
+
+.card__Three__title {
+    @include satr(20px, 135%)
+}
+
+.card__Three__text {
+    @extend %text;
+    max-width: 291px;
+    height: 51px;
+}
+
+.truckCards {
+    @extend %d-flex;
+    gap: 30px;
+    margin-top: 56px;
+}
+
+.truck__card {
+    border-radius: 10px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+    img {
+        width: 100%;
+    }
+}
+
+.truk__Title {
+    @include satr(20px, 135%)
+}
+
+.truck__title {
+    padding: 24px 0 32px 32px;
+}
+
+.truck__text {
+    max-width: 291px;
+    @extend %text;
+    margin: 16px 0 32px 0;
+}
+
+strong {
+    padding-bottom: 10px;
+    border-bottom: 2px solid $bgcolor;
+}
+
+.var {
+    width: 90%;
+    margin: 212px auto 0 auto;
+    background: var(--green, #0B7572);
+    padding: 85px 67px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.var__title {
+    @include satr(48px, 125%);
+    color: #FFF;
+    max-width: 330px;
+}
+
+tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    th {
+        background: #0B7572;
+        padding: 20px 36px;
+        color: #FFF;
+        font-weight: 600;
+        border-right: 1px double rgba(0, 0, 0, 0.20);
+        &:nth-child(4) {
+            border: none;
+        }
+    }
+}
+
+.td__141 {
+    max-width: 141px;
+}
+
+.td__112 {
+    max-width: 112px;
+}
+
+.td__114 {
+    max-width: 117px;
+}
+
+table {
+    padding: 0;
+    border-collapse: collapse;
+}
+
+td {
+    border-right: 1px solid rgba(0, 0, 0, 0.20);
+    padding: 24px 16px;
+    p {
+        @extend %text;
+    }
+    h3 {
+        @include satr(14px, 135%)
+    }
+}
+
+.tel {
+    max-width: 117px;
+    width: 100%;
+}
+
+.pdv {
+    padding: 28px 32px 40px 32px;
+    border-radius: 8px;
+    background: var(--white, #FFF);
+}
+
+.dflex {
+    @extend %d-flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.lin {
+    margin-bottom: 32px;
+}
+
+.pdv__text {
+    @extend %text;
+    max-width: 274px;
+}
+
+//SHeep cards
+.dNone {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 48px;
+}
+
+.dnone__card {
+    border-radius: 10px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+    margin: 24px 49px;
+    @extend %d-flex;
+    padding-left: 96px;
+    gap: 0 56px;
+    margin-top: 24px;
+}
+
+.block__text {
+    @extend %text;
+    max-width: 568px;
+    margin-top: 24px;
+}
+
+.pn {
+    margin: 0;
+}
+
+a {
+    color: #000;
+    font-size: 20px;
+}
+
+.logos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    margin-top: 90px;
+    gap: 75px 60px;
+    justify-content: center;
+}
+
+.text {
+    @extend %text;
+}
+
+.roc {
+    margin-top: 32px;
+    @include satr(20px, 135%);
+    margin-bottom: 14px;
+}
+
+.li {
+    background: #000;
+}
+
+.no {
+    padding: 0;
+    border: none;
+}
+
+.userCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.user__card {
+    max-width: 605px;
+    width: 100%;
+    border-radius: 10px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    background: #0B7572;
+}
+
+.user__white {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    padding: 32px;
+    background: #FFF;
+    width: 90%;
+    float: right;
+}
+
+.about__link {
+    @extend %text;
+    a {
+        @extend %text;
+    }
+}
+
+video {
+    width: 100%;
+    margin-top: 100px;
+}

@@ -1,0 +1,69 @@
+    footer {
+        background: #0B7572;
+        padding-top: 80px;
+        padding-left: 95px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-row: 100%;
+    }
+    
+    .LOGO {
+        color: #FFF;
+        font-family: Familjen Grotesk;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        /* 90px */
+        letter-spacing: 9.6px;
+        text-transform: capitalize;
+    }
+    
+    .footer__menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        gap: 25px;
+        li {
+            a {
+                color: #FFF;
+                text-align: center;
+                font-family: Exo 2;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%;
+                /* 19.5px */
+                letter-spacing: 2.08px;
+                text-transform: capitalize;
+            }
+        }
+    }
+    
+    .endIcon {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .end__btn {
+        padding: 8px 11px;
+        border: none;
+        background: $bgcolor;
+    }
+    
+    .end {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-top: 25px;
+    }
+    
+    .end__tex {
+        color: #FFF;
+        font-family: Exo 2;
+        font-size: 13px;
+        font-weight: 600;
+        /* 19.5px */
+        letter-spacing: 2.08px;
+        text-transform: capitalize;
+    }
